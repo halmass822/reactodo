@@ -26,6 +26,8 @@
 
 .tasksTable td{
     padding: 0.66rem;
+    max-width: 10rem;
+    overflow: hidden;
 }
 
 .taskName {
