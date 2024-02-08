@@ -1,0 +1,37 @@
+.tasksTable {
+    background-color: grey;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    padding: 0.2rem;
+    width: 100%;
+}
+
+.tasksTable thead {
+    border-bottom: 1px solid black;
+}
+
+.tasksTable tbody tr {
+    background-color: rgb(224, 224, 224);
+    border-collapse: collapse;
+    height: 5rem;
+}
+
+.tasksTable td {
+    text-wrap: wrap;
+}
+
+.tasksTable tbody tr:nth-child(odd) {
+    background-color: rgb(182, 182, 182);
+}
+
+.tasksDisplayHeader1 {
+    width: 10rem;
+}
+
+.tasksDisplayHeader2 {
+    width: 100%;
+}
+
+.tasksDisplayHeader3 {
+    width: 3rem;
+}

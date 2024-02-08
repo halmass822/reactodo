@@ -1,5 +1,5 @@
 export default function Task(props) {
-    return <tr>
+    return <tr className="taskRow">
     <td>{props.taskInfo.taskName}</td>
     <td>{props.taskInfo.taskDetails}</td>
     <td>

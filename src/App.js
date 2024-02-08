@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import NewTaskForm from './components/NewTaskform/NewTaskForm';
-import TasksDisplay from './components/TasksDisplay/TasksForm';
+import TasksDisplay from './components/TasksDisplay/TasksDisplay';
 
 function App() {
 

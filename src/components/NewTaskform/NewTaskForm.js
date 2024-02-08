@@ -16,12 +16,15 @@ export default function NewTaskForm(props) {
         <label className="newTaskName">Name: 
             <input type="text" onChange={(e) => setNewTaskName(e.target.value)} 
             value={newTaskName}
-            className="nameInput"></input> 
+            className="nameInput"
+            required
+            ></input> 
         </label>
         <label className="newTaskDetails">Details: 
             <textarea type="text" onChange={(e) => setNewTaskDetails(e.target.value)} 
             value={newTaskDetails}
-            className="nameInput"></textarea> 
+            className="nameInput"
+            ></textarea> 
         </label>
         <button className="newTaskSubmitBtn" type="submit">Create</button>
     </form>
