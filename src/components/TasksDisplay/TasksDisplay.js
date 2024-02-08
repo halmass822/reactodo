@@ -7,8 +7,7 @@ export default function TasksDisplay(props) {
             <thead>
                 <tr>
                     <th className="tasksDisplayHeader1">Task</th>
-                    <th className="tasksDisplayHeader2">Description</th>
-                    <th className="tasksDisplayHeader3">Remove</th>
+                    <th className="tasksDisplayHeader2" colspan="2">Description</th>
                 </tr>
             </thead>
             <tbody>

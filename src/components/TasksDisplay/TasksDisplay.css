@@ -1,9 +1,13 @@
-.tasksTable {
-    background-color: grey;
-    border-radius: 0.5rem;
+.TasksDisplayContainer {
     margin: 0.5rem;
+}
+
+.tasksTable {
+    background-color: rgb(150, 150, 150);
+    border-radius: 0.5rem;
     padding: 0.2rem;
     width: 100%;
+    border-collapse: collapse
 }
 
 .tasksTable thead {
@@ -16,22 +20,32 @@
     height: 5rem;
 }
 
-.tasksTable td {
-    text-wrap: wrap;
-}
-
 .tasksTable tbody tr:nth-child(odd) {
     background-color: rgb(182, 182, 182);
 }
 
-.tasksDisplayHeader1 {
+.tasksTable td{
+    padding: 0.66rem;
+}
+
+.taskName {
     width: 10rem;
 }
 
-.tasksDisplayHeader2 {
-    width: 100%;
+.removeTaskButtonTd {
+    width: 2rem;
 }
 
-.tasksDisplayHeader3 {
-    width: 3rem;
+.removeTaskButtonTd button{
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(255, 50, 50);
+    transition: background-color 0.1s;
+    border: 1.5px solid black;
+    border-radius: 0.25rem;
+}
+
+.removeTaskButtonTd button:hover {
+    background-color: rgb(255, 104, 104);
+    cursor: pointer;
 }
