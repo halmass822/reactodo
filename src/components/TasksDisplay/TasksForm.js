@@ -1,15 +1,17 @@
+import Task from "../Task/Task"
+
 export default function TasksDisplay(props) {
     return <table className="tasksTable">
-        <tr>
-            <th>Task</th>
-            <th>Description</th>
-        </tr>
-        {props.tasks.map((task, index) => {
-            return <tr key={index}>
-                <td>{task.taskName}</td>
-                <td>{task.taskDetails}</td>
-                <button onClick={props.removeTask(task.taskId)}>x</button>
+        <thead>
+            <tr>
+                <th>Task</th>
+                <th>Description</th>
             </tr>
-        })}
+        </thead>
+        <tbody>
+            {props.tasks.map((task, index) => {
+                return <Task key={index} taskInfo={task} removeTask={props.removeTask} />
+            })}
+        </tbody>
     </table>
 }

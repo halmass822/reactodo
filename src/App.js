@@ -48,9 +48,10 @@ function App() {
   }
 
   function removeTask(taskId) {
+    console.log("removetask run for " + taskId)
     setTasks((prev) => {
       return prev.filter((task) => {
-        return task.id !== taskId
+        return task.taskId !== taskId
       });
     });
   }
